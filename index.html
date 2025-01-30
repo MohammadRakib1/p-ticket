@@ -52,21 +52,95 @@
     </nav>
     <!-- banner section -->
     <section>
-        <div class="hero min-h-screen"
-            style="background-image: url(https://img.daisyui.com/images/stock/photo-1507358522600-9f71e620c44e.webp);">
-            <div class="hero-overlay bg-opacity-60"></div>
+        <div class="hero lg:h-[600px] h-[800px] bg-opacity-30 lg:rounded-3xl max-w-7xl mx-auto lg:mb-32 mb-16"
+            style="background-image: url(images/banner.png);">
+            <div class="hero-overlay lg:rounded-[30px]"></div>
             <div class="hero-content text-neutral-content text-center">
                 <div class="max-w-md">
-                    <h1 class="mb-5 text-5xl font-bold">Hello there</h1>
-                    <p class="mb-5">
-                        Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-                        quasi. In deleniti eaque aut repudiandae et a id nisi.
-                    </p>
-                    <button class="btn btn-primary">Get Started</button>
+                    <h1 class="mb-5 lg:text-5xl text-4xl font-extrabold text-white">End-to-End Travel <span
+                            class="lg:text-[#1DD100]">
+                            Paribahan</span></h1>
+                    <p class="mb-7 text-white">Yes, you can run unit tests and view the results directly within the app.
+                        The integrated testing features allow for a streamlined .</p>
+                    <button class="btn bg-[#1DD100] text-[#030712] font-bold border-none">Buy Tickets</button>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- best offers -->
+    <section class="lg:mb-32 mb-16">
+        <h1 class="text-4xl font-bold text-center text-[#030712] lg:mb-12 mb-6">Best offers for you</h1>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:gap-6 gap-2 max-w-7xl mx-auto">
+            <div class="bg-[#FFBF0F] items-center flex lg:rounded-3xl">
+                <div class="lg:p-12 p-6">
+                    <h1 class="lg:text-5xl text-3xl font-black text-[#030712CC]">15% OFF</h1>
+                    <p class="text-lg font-semibold text-[#030712CC]">on your next purchase</p>
+                    <p class="text-[#03071280]">use by january 2025</p>
+                </div>
+                <img class="lg:visible invisible" src="images/cupon-devider.png" alt="">
+                <div class="lg:p-12">
+                    <h1 class="text-[#030712] font-bold text-xl">NEW15</h1>
+                    <p class="text-[#03071266]">Coupon Code</p>
+                </div>
+            </div>
+            <div class="bg-[#F78C9C] items-center flex lg:rounded-3xl">
+                <div class="lg:p-12 pl-6">
+                    <h1 class="lg:text-5xl text-3xl font-black text-[#030712CC]">20% OFF</h1>
+                    <p class="text-lg font-semibold text-[#030712CC]">on your next purchase</p>
+                    <p class="text-[#03071280]">use by january 2025</p>
+                </div>
+                <img class="lg:visible invisible" src="images/cupon-devider.png" alt="">
+                <div class="lg:p-12 p-6">
+                    <h1 class="text-[#030712] font-bold text-xl">Couple 20</h1>
+                    <p class="text-[#03071266]">Coupon Code</p>
+                </div>
+            </div>
+        </div>
+        <div class="lg:mt-16 mt-6 text-center">
+            <button class="btn border-[#1DD100] text-[#1DD100] bg-[white]">See All Offers</button>
+        </div>
+    </section>
+
+    <!-- ticket sales section -->
+    <section class="bg-[#F7F8F8] border-t-2 border-[#1DD100] lg:rounded-t-[88px] rounded-t-[40px] pb-28">
+        <h1 class="text-[#030712] font-bold text-4xl text-center lg:pt-24 pt-12">P.H Paribahan</h1>
+        <p class="text-[#03071299] text-center lg:w-[700px] mx-auto p-2">Yes, you can run unit tests and view the results directly within the
+            app. The integrated testing features
+            allow for a streamlined .</p>
+    </section>
+
+    <!-- footer section -->
+    <footer class="bg-[#030712]">
+        <div class="max-w-7xl mx-auto lg:py-32 py-16">
+            <div class="flex justify-between lg:ml-0 ml-5 items-center flex-wrap">
+                <div class="text-white lg:py-0">
+                    <h1 class="font-extrabold text-3xl">P-Ticket</h1>
+                    <p class="lg:visible invisible">P-Ticket is a digital platform to make your <br> daily commuting
+                        better.</p>
+                </div>
+                <div class="text-white">
+                    <h3 class="font-semibold mb-2">Download our app</h3>
+                    <div class="flex border p-2 rounded-xl">
+                        <img src="images/playstore.png" alt="">
+                        <div class="ml-4">
+                            <h6 class="text-sm font-medium">GET IT ON</h6>
+                            <h5 class="font-extrabold">Google Play</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <hr class="lg:my-10 lg:visible invisible">
+            <div class=" text-white lg:flex lg:ml-0 ml-4 lg:py-0 py-5 justify-between">
+                <p class="lg:visible invisible">@all rights reserved, P-Ticket services limited.2024</p>
+                <div class="lg:flex-col">
+                    <a class="mr-5" href="">Terms & condition</a>
+                    <a class="mr-5" href="">Return & refund policy</a>
+                    <a href="">Privacy policy</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
