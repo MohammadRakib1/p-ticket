@@ -62,7 +62,8 @@
                             Paribahan</span></h1>
                     <p class="mb-7 text-white">Yes, you can run unit tests and view the results directly within the app.
                         The integrated testing features allow for a streamlined .</p>
-                    <button class="btn bg-[#1DD100] text-[#030712] font-bold border-none">Buy Tickets</button>
+                    <button onclick="buyTicket()" class="btn bg-[#1DD100] text-[#030712] font-bold border-none">Buy
+                        Tickets</button>
                 </div>
             </div>
         </div>
@@ -103,7 +104,8 @@
     </section>
 
     <!-- ticket sales section -->
-    <section class="lg:bg-[#F7F8F8] border-t-2 border-[#1DD100] lg:rounded-t-[88px] rounded-t-[40px] lg:pb-28 pb-10">
+    <section id="ticket-sale"
+        class="lg:bg-[#F7F8F8] border-t-2 border-[#1DD100] lg:rounded-t-[88px] rounded-t-[40px] lg:pb-28 pb-10">
         <h1 class="text-[#030712] font-bold text-4xl text-center lg:pt-24 pt-12">P.H Paribahan</h1>
         <p class="text-[#03071299] text-center lg:w-[700px] mx-auto lg:p-2">Yes, you can run unit tests and view the
             results directly within the
@@ -148,7 +150,7 @@
                     <img src="images/fare.png" alt="">
                 </div>
                 <div>
-                    <h2 class="text-[#030712] font-bold text-3xl">550 Taka</h2>
+                    <h2 class="text-[#030712] font-bold text-3xl"><span id="ticket-price">550</span> Taka</h2>
                     <p class="text-[#03071299]">Per Seat</p>
                 </div>
             </div>
@@ -157,7 +159,7 @@
         <!-- ticket option -->
         <div
             class="max-w-7xl mx-auto lg:mt-10 mt-5 bg-[white] lg:p-8 p-4 gap-14 justify-between rounded-3xl grid grid-cols-1 lg:grid-cols-2">
-            <div>
+            <div class="lg:border-r-2 lg:pr-12 lg:border-dashed">
                 <h4 class="text-[#030712] text-2xl mb-4 font-semibold">Select Your Seat</h4>
                 <div class="flex justify-between py-4 border-y-2 border-dashed">
                     <p class="text-[#03071280] flex font-medium"><img class="mr-2" src="images/seat-gray.png" alt="">
@@ -172,64 +174,64 @@
                 </div>
                 <div class="text-[#03071280] lg:my-6 items-center lg:gap-6 grid grid-cols-4 lg:grid-cols-5 gap-3">
                     <p class="font-medium hidden sm:block">A</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">A1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">A2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">A3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">A4</button>
 
                     <p class="font-medium hidden sm:block">B</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">B1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">B2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">B3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">B4</button>
 
                     <p class="font-medium hidden sm:block">C</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">C1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">C2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">C3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">C4</button>
 
                     <p class="font-medium hidden sm:block">D</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">D1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">D2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">D3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">D4</button>
 
                     <p class="font-medium hidden sm:block">E</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">E1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">E2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">E3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">E4</button>
 
                     <p class="font-medium hidden sm:block">F</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">F1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">F2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">F3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">F4</button>
 
                     <p class="font-medium hidden sm:block">G</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">G1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">G2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">G3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">G4</button>
 
                     <p class="font-medium hidden sm:block">H</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">H1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">H2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">H3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">H4</button>
 
                     <p class="font-medium hidden sm:block">I</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">I1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">I2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">I3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">I4</button>
 
                     <p class="font-medium hidden sm:block">J</p>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J1</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J2</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J3</button>
-                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J4</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">J1</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">J2</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">J3</button>
+                    <button class="btn add-btn py-4 px-10 text-[#03071280] font-medium">J4</button>
                 </div>
             </div>
 
@@ -237,20 +239,20 @@
             <div>
                 <h4 class="text-[#030712] font-semibold text-2xl border-b-2 border-dashed pb-4">Select Your Seat</h4>
                 <div class="bg-[#F7F8F8] rounded-xl p-8 mt-4">
-                    <div class="pb-2 border-dashed ">
-                        <div class="flex justify-between border-b-2 border-dashed pb-3">
+                    <div class="pb-2 border-dashed items-center ">
+                        <div class="grid grid-cols-3 justify-between text-center border-b-2 border-dashed pb-3">
                             <h5 class="font-semibold text-[#030712]">Seat <sup
                                     class="px-1 text-white rounded-full bg-[#1DD100]">0</sup> </h5>
                             <h5 class="font-semibold text-[#030712]">Class</h5>
                             <h5 class="font-semibold text-[#030712]">Price</h5>
                         </div>
-                        <div class="flex justify-between pt-3 pb-3">
-                            <p class="text-[#03071299]">C2</p>
-                            <p class="text-[#03071299]">Economy</p>
-                            <p class="text-[#03071299]">550</p>
-                        </div>
+
+                        <!-- Empty div -->
+                        <div id="price-show"
+                            class="justify-between items-center text-center grid grid-cols-3 pt-3 pb-3"></div>
+
                         <hr>
-                        <div class="flex justify-between pt-3">
+                        <div class="grid grid-cols-2 justify-between text-center pt-3">
                             <p class="text-[#030712] font-medium">Total Price</p>
                             <p class="text-[#030712] font-medium">BDT <span>550</span></p>
                         </div>
@@ -259,7 +261,7 @@
                                 placeholder="Have any copupon?">
                             <button class="sm:btn bg-[#1DD100] rounded-xl py-2 px-4 text-white -ml-20">Apply</button>
                         </div>
-                        <div class="flex justify-between mt-4">
+                        <div class="grid grid-cols-2 text-center justify-between mt-4">
                             <p class="text-[#030712] font-medium">Grand Total</p>
                             <p class="text-[#030712] font-medium">BDT <span>550</span></p>
                         </div>
@@ -340,6 +342,8 @@
             </div>
         </div>
     </footer>
+
+    <script src="index.js"></script>
 </body>
 
 </html>
