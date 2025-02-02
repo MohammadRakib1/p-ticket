@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" href="images/bus-stop.png" type="image/x-icon">
+    <link rel="shortcut icon" href="images/travel.png" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="index.css">
@@ -103,7 +103,7 @@
     </section>
 
     <!-- ticket sales section -->
-    <section class="lg:bg-[#F7F8F8] border-t-2 border-[#1DD100] lg:rounded-t-[88px] rounded-t-[40px] lg:pb-28">
+    <section class="lg:bg-[#F7F8F8] border-t-2 border-[#1DD100] lg:rounded-t-[88px] rounded-t-[40px] lg:pb-28 pb-10">
         <h1 class="text-[#030712] font-bold text-4xl text-center lg:pt-24 pt-12">P.H Paribahan</h1>
         <p class="text-[#03071299] text-center lg:w-[700px] mx-auto lg:p-2">Yes, you can run unit tests and view the
             results directly within the
@@ -129,12 +129,11 @@
                         <p>Route</p>
                         <p>Dhaka - Sylhet</p>
                     </div>
-                    <hr>
-                    <div class="text-[#03071299] flex justify-between lg:py-5 py-2 font-semibold">
+                    <div
+                        class="text-[#03071299] flex justify-between lg:py-5 py-2 font-semibold border-y-2 border-dashed">
                         <p>Departure Time</p>
                         <p>9:00 PM</p>
                     </div>
-                    <hr>
                     <div class="pt-6 lg:flex lg:gap-8 lg:justify-between">
                         <button class="btn mb-2">Boarding Point - Laxmipur</button>
                         <button class="btn lg:mr-0 mr-2">Dropping Point - Bogura</button>
@@ -142,7 +141,7 @@
                     </div>
                 </div>
             </div>
-            <img class="hidden sm:block" src="images/info-devider.png" alt="">
+            <img class="hidden sm:block border-2 border-dashed" src="images/info-devider.png" alt="">
             <div
                 class="lg:ml-40 lg:bg-[white] bg-[#F7F8F8] lg:mx-0 mx-2 lg:mb-0 mb-7 lg:p-0 p-8 text-center flex justify-center gap-3 rounded-3xl">
                 <div>
@@ -156,8 +155,157 @@
         </div>
 
         <!-- ticket option -->
-        <div>
-            
+        <div
+            class="max-w-7xl mx-auto lg:mt-10 mt-5 bg-[white] lg:p-8 p-4 gap-14 justify-between rounded-3xl grid grid-cols-1 lg:grid-cols-2">
+            <div>
+                <h4 class="text-[#030712] text-2xl mb-4 font-semibold">Select Your Seat</h4>
+                <div class="flex justify-between py-4 border-y-2 border-dashed">
+                    <p class="text-[#03071280] flex font-medium"><img class="mr-2" src="images/seat-gray.png" alt="">
+                        Available</p>
+                    <p class="text-[#1DD100] flex font-medium"><img class="mr-2" src="images/seat-green-filled.png"
+                            alt=""> Selected
+                    </p>
+                </div>
+                <div class="lg:my-5 my-2 flex justify-end">
+                    <button class="btn rounded-xl bg-[#0307121A]"><img class="w-6 lg:my-3 my-1 lg:mx-5 mx-3"
+                            src="images/steering-wheel.png" alt=""></button>
+                </div>
+                <div class="text-[#03071280] lg:my-6 items-center lg:gap-6 grid grid-cols-4 lg:grid-cols-5 gap-3">
+                    <p class="font-medium hidden sm:block">A</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">A4</button>
+
+                    <p class="font-medium hidden sm:block">B</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">B4</button>
+
+                    <p class="font-medium hidden sm:block">C</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">C4</button>
+
+                    <p class="font-medium hidden sm:block">D</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">D4</button>
+
+                    <p class="font-medium hidden sm:block">E</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">E4</button>
+
+                    <p class="font-medium hidden sm:block">F</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">F4</button>
+
+                    <p class="font-medium hidden sm:block">G</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">G4</button>
+
+                    <p class="font-medium hidden sm:block">H</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">H4</button>
+
+                    <p class="font-medium hidden sm:block">I</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">I4</button>
+
+                    <p class="font-medium hidden sm:block">J</p>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J1</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J2</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J3</button>
+                    <button class="btn py-4 px-10 text-[#03071280] font-medium">J4</button>
+                </div>
+            </div>
+
+            <!-- select your seat -->
+            <div>
+                <h4 class="text-[#030712] font-semibold text-2xl border-b-2 border-dashed pb-4">Select Your Seat</h4>
+                <div class="bg-[#F7F8F8] rounded-xl p-8 mt-4">
+                    <div class="pb-2 border-dashed ">
+                        <div class="flex justify-between border-b-2 border-dashed pb-3">
+                            <h5 class="font-semibold text-[#030712]">Seat <sup
+                                    class="px-1 text-white rounded-full bg-[#1DD100]">0</sup> </h5>
+                            <h5 class="font-semibold text-[#030712]">Class</h5>
+                            <h5 class="font-semibold text-[#030712]">Price</h5>
+                        </div>
+                        <div class="flex justify-between pt-3 pb-3">
+                            <p class="text-[#03071299]">C2</p>
+                            <p class="text-[#03071299]">Economy</p>
+                            <p class="text-[#03071299]">550</p>
+                        </div>
+                        <hr>
+                        <div class="flex justify-between pt-3">
+                            <p class="text-[#030712] font-medium">Total Price</p>
+                            <p class="text-[#030712] font-medium">BDT <span>550</span></p>
+                        </div>
+                        <div class="items-center justify-center flex mt-4">
+                            <input type="text" class="py-3 pl-3 w-full rounded-xl" name="" id=""
+                                placeholder="Have any copupon?">
+                            <button class="sm:btn bg-[#1DD100] rounded-xl py-2 px-4 text-white -ml-20">Apply</button>
+                        </div>
+                        <div class="flex justify-between mt-4">
+                            <p class="text-[#030712] font-medium">Grand Total</p>
+                            <p class="text-[#030712] font-medium">BDT <span>550</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-6">
+                    <h6 class="text-[#030712] font-semibold">Passenger Name*</h6>
+                    <input class="w-full py-4 pl-2 border rounded-xl mt-2" type="text" name="" id=""
+                        placeholder="Enter your name">
+                    <h6 class="text-[#030712] font-semibold mt-6">Phone Number*</h6>
+                    <input class="w-full py-4 pl-2 border rounded-xl mt-2" type="number" name="" id=""
+                        placeholder="Enter your phone number">
+                    <h6 class="text-[#030712] font-semibold mt-6">Email ID</h6>
+                    <input class="w-full py-4 pl-2 border rounded-xl mt-2" type="email" name="" id=""
+                        placeholder="Enter your email id">
+                    <div class="mt-6">
+                        <!-- Open the modal using ID.showModal() method -->
+                        <button class="btn w-full bg-[#1DD100] text-white font-extrabold"
+                            onclick="my_modal_5.showModal()">Next</button>
+                        <dialog id="my_modal_5" class="modal modal-bottom sm:modal-middle">
+                            <div class="modal-box">
+                                <div class="flex justify-center my-8">
+                                    <img src="images/success.png" alt="">
+                                </div>
+                                <h3 class="text-lg text-center font-bold text-[#27AE60]">SUCCESS</h3>
+                                <h6 class="text-[#4A4A4A] font-extrabold mt-6 text-center">Thank you for Booking Our Bus
+                                    Seats.
+                                    We are working hard to find the best service and deals for you.</h6>
+                                <p class="py-4 text-[#4A4A4A] text-center">Shortly you will find a confirmation in your
+                                    email.</p>
+                                <div class="modal-action flex justify-center">
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
+                                        <button
+                                            class="btn bg-[#27AE60] text-white font-semibold rounded-3xl">Continue</button>
+                                    </form>
+                                </div>
+                            </div>
+                        </dialog>
+                    </div>
+                    <div class="flex justify-evenly mt-6">
+                        <p class="text-[#03071299] border-b-2"><a href="">Terms and Conditions</a></p>
+                        <p class="text-[#03071299] border-b-2"><a href="">Cancellation Policy</a></p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
