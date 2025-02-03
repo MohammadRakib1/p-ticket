@@ -122,8 +122,11 @@
                         </div>
                     </div>
                     <div class="lg:mb-0 mb-3">
-                        <button class="btn bg-[#1DD10026] text-[#1DD100]"><img src="images/seat-green.png" alt=""> 40
-                            Seats left</button>
+                        <p class="flex bg-[#1DD10026] items-center rounded-xl text-[#1DD100] py-3 px-4 font-semibold">
+                            <img class="mr-2" src="images/seat-green.png" alt="">
+                            <span id="seat-left" class="mr-1">40</span>
+                            Seats left
+                        </p>
                     </div>
                 </div>
                 <div class="bg-[#F7F8F8] lg:my-7 lg:p-7 p-4 rounded-3xl">
@@ -242,7 +245,7 @@
                     <div class="pb-2 border-dashed items-center ">
                         <div class="grid grid-cols-3 justify-between text-center border-b-2 border-dashed pb-3">
                             <h5 class="font-semibold text-[#030712]">Seat <sup
-                                    class="px-1 text-white rounded-full bg-[#1DD100]">0</sup> </h5>
+                                    class="px-1 text-white rounded-full bg-[#1DD100]" id="seat-count">0</sup> </h5>
                             <h5 class="font-semibold text-[#030712]">Class</h5>
                             <h5 class="font-semibold text-[#030712]">Price</h5>
                         </div>
@@ -254,16 +257,17 @@
                         <hr>
                         <div class="grid grid-cols-2 justify-between text-center pt-3">
                             <p class="text-[#030712] font-medium">Total Price</p>
-                            <p class="text-[#030712] font-medium">BDT <span>550</span></p>
+                            <p class="text-[#030712] font-medium">BDT <span id="total-price">0</span></p>
                         </div>
                         <div class="items-center justify-center flex mt-4">
-                            <input type="text" class="py-3 pl-3 w-full rounded-xl" name="" id=""
+                            <input id="coupon-code" type="text" class="py-3 pl-3 w-full rounded-xl" name="" id=""
                                 placeholder="Have any copupon?">
-                            <button class="sm:btn bg-[#1DD100] rounded-xl py-2 px-4 text-white -ml-20">Apply</button>
+                            <button onclick="updateGrandTotal('apply-btn')"
+                                class="btn bg-[#1DD100] rounded-xl py-2 px-4 text-white -ml-20">Apply</button>
                         </div>
                         <div class="grid grid-cols-2 text-center justify-between mt-4">
                             <p class="text-[#030712] font-medium">Grand Total</p>
-                            <p class="text-[#030712] font-medium">BDT <span>550</span></p>
+                            <p class="text-[#030712] font-medium">BDT <span id="grand-total">0</span></p>
                         </div>
                     </div>
                 </div>
