@@ -47,11 +47,11 @@ function updateGrandTotal(status) {
     }
     else {
         const couponCode = document.getElementById('coupon-code').value;
-        if (couponCode == 'new15') {
+        if (couponCode == 'NEW15') {
             const discountedPrice = totalPrice * 0.15;
             document.getElementById('grand-total').innerText = totalPrice - discountedPrice;
         }
-        else if (couponCode == 'couple20') {
+        else if (couponCode == 'Couple 20') {
             const discountedPrice = totalPrice * 0.2;
             document.getElementById('grand-total').innerText = totalPrice - discountedPrice
         }
