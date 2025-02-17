@@ -72,21 +72,3 @@ function getConvertedValue(id) {
     const convertedPrice = parseInt(price);
     return convertedPrice;
 }
-
-// function updateGrandTotal(status) {
-//     const totalCost = getConvertedValue('total-cost');
-//     if (status == undefined) {
-//         document.getElementById('grand-total').innerText = totalCost;
-//     }
-//     else {
-//         const couponCode = document.getElementById('coupon-code').value;
-//         if (couponCode == 'love420') {
-//             const discouted = totalCost * 0.2;
-//             document.getElementById('grand-total').innerText = totalCost - discouted;
-//         }
-//         else {
-//             alert('please enter a valid coupon code');
-//         }
-//     }
-
-// }
